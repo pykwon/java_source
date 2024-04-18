@@ -51,7 +51,4 @@ public class Ex32DtoTest2 {
 		test2.inputData(datas);
 		test2.displayData();
 	}
-
 }
-
-
