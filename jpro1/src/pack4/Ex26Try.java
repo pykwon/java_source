@@ -35,11 +35,6 @@ public class Ex26Try {
 			System.out.println("re : " + re);
 		} catch (FileNotFoundException e1) {
 			System.out.println("해당 파일이 없어요");
-		} catch (NullPointerException e2) {
-			//e2.printStackTrace();
-			System.out.println("객체 변수 에러 원인은 " + e2.getMessage());
-		} catch (ArrayIndexOutOfBoundsException e3) {
-			System.out.println("배열 처리 중 에러 : " + e3);
 		} catch (Exception e) {
 			System.out.println("오류 " + e);
 		} finally {
