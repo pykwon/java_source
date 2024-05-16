@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>layout</title>
+<style type="text/css">
+body {
+	width: 90%; /* 전체 페이지 너비를 화면 너비의 90%로 설정 */
+	margin: 0 auto; /* 페이지를 화면 중앙에 배치 */
+}
+
+h2#title {
+	text-align: center;   /* 제목을 중앙에 정렬 */
+	border-bottom: 2px solid black; /* 제목 하단에 두께 2px의 선 추가 */
+	padding-bottom: 10px; /* 제목 하단에 10px의 여백 추가 */
+}
+
+ul {
+	list-style: none; /* 목록 스타일 제거 */
+	padding: 0; /* 안쪽 여백 제거 */
+	margin: 0;  /* 바깥 여백 제거 */
+}
+
+li a {
+	display: block; /* 링크를 블록 요소로 설정하여 전체 영역 클릭 가능 */
+}
+
+.head {
+	border: 1px solid black; /* 검은색 테두리 추가 */
+	width: 100%;     /* 너비를 100%로 설정 */
+	overflow: auto;  /* 콘텐츠가 넘칠 경우 자동으로 스크롤바 추가 */
+	padding: 10px;   /* 10px의 내부 여백 추가 */
+	box-sizing: border-box; /* 패딩과 테두리를 포함한 너비 설정 */
+}
+
+.head ul {
+	display: flex;   /* 플렉스 박스 레이아웃 사용 */
+	justify-content: center; /* 항목을 중앙에 정렬 */
+	gap: 10px;       /* 항목 사이에 10px 간격 추가 */
+}
+
+nav {
+	float: left; /* 왼쪽으로 정렬하여 플로팅 */
+	width: 20%;  /* 너비를 20%로 설정 */
+}
+
+#contents {
+	float: left; /* 왼쪽으로 정렬하여 플로팅 */
+	width: 55%;  /* 너비를 55%로 설정 */
+}
+
+#ad {
+	float: left; /* 왼쪽으로 정렬하여 플로팅 */
+	width: 25%;  /* 너비를 25%로 설정 */
+	font-size: 0.8em; /* 글자 크기를 0.8em으로 설정 */
+	text-align: center; /* 텍스트와 리스트 항목을 중앙에 정렬 */
+}
+
+footer {
+	clear: both; /* 플로팅 해제 */
+	text-align: center; /* 중앙 정렬 */
+	margin-top: 20px;   /* 상단에 20px 여백 추가 */
+	padding-top: 10px;  /* 상단에 10px 패딩 추가 */
+	border-top: 2px solid black; /* 상단에 두께 2px의 선 추가 */
+}
+</style>
+</head>
+<body>
+<h2 id="title">* CSS로 화면 레이아웃 연습 *</h2>
+<header>
+	<h3>여기는 머리글</h3>
+	<div class="head">
+		<ul>
+			<li class="go_site"><a href="https://www.naver.com">네이버</a></li>
+			<li class="go_site"><a href="https://www.korea.com">코리아</a></li>
+			<li class="go_site"><a href="https://www.google.com">구우글</a></li>
+		</ul>
+	</div>
+</header>
+<nav>
+	<h3>항목 선택</h3>
+	<ul>
+		<li>메인</li>
+		<li>자동차</li>
+		<li>반도체</li>
+		<li>스포츠</li>
+		<li>기타</li>
+	</ul>
+</nav>
+
+<div id="contents">
+	<h3>핫 이슈</h3>
+	<p>
+		객체 지향 프로그래밍(영어: Object-Oriented Programming, OOP)은 컴퓨터 프로그래밍의 패러다임 중 하나이다. 객체 지향 프로그래밍은 컴퓨터 프로그램을 명령어의 목록으로 보는 시각에서 벗어나 여러 개의 독립된 단위, 즉 "객체"들의 모임으로 파악하고자 하는 것이다. 각각의 객체는 메시지를 주고받고, 데이터를 처리할 수 있다.
+		객체 지향 프로그래밍은 프로그램을 유연하고 변경이 쉽게 만들기 때문에 대규모 소프트웨어 개발에 많이 사용된다. 또한 프로그래밍을 더 배우기 쉽게 하고 소프트웨어 개발과 보수를 간편하게 하며, 보다 직관적인 코드 분석을 가능하게 하는 장점이 있다. 프로그램의 객체화 경향은 실제 세계의 모습을 그대로 반영하지 못한다는 비판을 받기도 한다.	
+	</p>
+</div>
+
+<div id="ad">
+	<h3>광고 글</h3>
+	<ul>
+		<li>현대</li>
+		<li>삼성</li>
+		<li>엘지</li>
+	</ul>
+</div>
+
+<footer>
+	<b>나는 바닥글</b> 공지 사항을 주로 기술
+</footer>
+</body>
+</html>
