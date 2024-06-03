@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+window.onload = () => {
+	document.querySelector("#btnOk").onclick = function(){
+		frm.submit();
+	}
+}
+</script>
+</head>
+<body>
+<table>
+  <tr>
+  	<td>
+  		<img src="images/sangpum1.jpg" width="80%">
+  	</td>
+  	<td>
+<pre>
+디온리 스테인리스 찜기
+415개 상품평
+15% 49,800원 
+49,800원
+쿠팡판매가 42,000원  와우할인가
+	
+내일(토)  도착 보장 
+PC에서도 간편한 결제
+
+혜택보기
+종류: 전기찜기
+재질: 스테인리스
+형태: 2단
+</pre>  	
+  	</td>
+  </tr>
+  <tr>
+  	<td colspan="2">
+  		<form action="Cart" name="frm" method="post">
+  			<input type="hidden" name="name" value="디온리 스테인리스 찜기">
+  			<input type="hidden" name="price" value="42000">
+  			<input type="button" id="btnOk" value="장바구니에 상품 담기">
+  			<input type="button" value="홈으로 이동" onclick="history.back()">
+  		</form>
+  	</td>
+  </tr>
+</table>
+</body>
+</html>
+
+
+
+
+
+
+
+

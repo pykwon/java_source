@@ -3,6 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<script type="text/javascript">
+window.onload = function(){
+	let btnOk = document.querySelector("#btnOk");
+	btnOk.addEventListener("click", func);
+}
+
+function func(){
+	if(frm.name.value === "" || frm.addr.value === "" || frm.age.value === ""){
+		alert("자료 입력!");
+		return;
+	}
+	frm.submit();
+}
+</script>
 </head>
 <body>
 <h2>get 요청</h2>

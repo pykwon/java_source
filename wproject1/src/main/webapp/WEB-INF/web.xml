@@ -20,4 +20,16 @@
   	<url-pattern>/dajeong</url-pattern>
   </servlet-mapping>
   -->
+  
+  <!--  
+  <session-config>
+  	<session-timeout>60</session-timeout>
+  </session-config>
+  -->
 </web-app>
+
+
+
+
+
+

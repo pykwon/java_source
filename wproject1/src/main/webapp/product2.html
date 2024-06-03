@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+window.onload = () => {
+	document.querySelector("#btnOk").onclick = function(){
+		frm.submit();
+	}
+}
+</script>
+</head>
+<body>
+<table>
+  <tr>
+  	<td>
+  		<img src="images/sangpum2.jpg" width="80%">
+  	</td>
+  	<td>
+<pre>
+테팔 티타늄 1X 심플쿡 볶음 프라이팬
+83개 상품평
+10% 31,020원 
+30,690원
+(1개당 30,690원)
+쿠팡판매가
+25,000원
+(1개당 27,620원)
+와우할인가
+	
+이 상품은 내일 도착, 무료배송
+무료배송
+다른 판매자 보기(2)
+30,690원 (1개당 30,690원) 쿠팡판매가	
+27,620원 (1개당 27,620원) 와우할인가	
+PC에서도 간편한 결제
+</pre>  	
+  	</td>
+  </tr>
+  <tr>
+  	<td colspan="2">
+  		<form action="Cart" name="frm" method="post">
+  			<input type="hidden" name="name" value="심플쿡 볶음 프라이팬">
+  			<input type="hidden" name="price" value="25000">
+  			<input type="button" id="btnOk" value="장바구니에 상품 담기">
+  			<input type="button" value="홈으로 이동" onclick="history.back()">
+  		</form>
+  	</td>
+  </tr>
+</table>
+</body>
+</html>
+
+
+
+
+
+
+
+

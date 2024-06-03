@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+window.onload = () => {
+	document.querySelector("#btnOk").onclick = function(){
+		frm.submit();
+	}
+}
+</script>
+</head>
+<body>
+<h2>성적입력</h2>
+
+<hr style="text-align: center;" width="90%">
+<form action="Report" name="frm" method="post">
+번호 : <input type="text" name="bunho" size="7"><br>
+이름 : <input type="text" name="irum" size="7"><br>
+국어 : <input type="text" name="kor" size="7"><br>
+영어 : <input type="text" name="eng" size="7"><br>
+<input type="button"id="btnOk" value="등록">
+</form>
+</body>
+</html>
