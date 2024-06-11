@@ -18,7 +18,7 @@ public class ServletEx7Session extends HttpServlet {
 		// session : 각 클라리언트의 정보를 웹서버에 메모리 확보 후 저장
 		HttpSession session = request.getSession(true);    // 세션이 있으면 읽고 없으면 세션 생성함 
 		//HttpSession session = request.getSession(false); // 세션이 있으면 읽고 없으면 세션 생성 안함
-		session.setMaxInactiveInterval(10);   // 1분간 유효. 기본값은 30분
+		session.setMaxInactiveInterval(10);   // 10초 간 유효. 기본값은 30분
 		
 		if(session != null) {
 			session.setAttribute("name", "홍길동");
