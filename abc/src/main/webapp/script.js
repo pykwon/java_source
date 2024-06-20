@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     links.forEach(link => {
         link.addEventListener('click', function(event) {
             event.preventDefault();
-            const target = this.href;
+            const target = this.href; 
 
             document.body.classList.add('fade-out');
 

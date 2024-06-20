@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 .fade-out {
-    opacity: 0;    /* 투명도 조절   0(투명) ~ 1(불투명) */
+    opacity: 0; /* 투명도 조절   0(투명) ~ 1(불투명) */
 }
 .fade-in {
     opacity: 1;
