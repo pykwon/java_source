@@ -8,7 +8,7 @@ package lambda;
 interface HelloInter { // Lambda Expression을 사용할 인터 페이스
 	// 추상 메소드는 반드시 1개여야 함. 그리고 얘를 함수형 인터페이스라고 부른다.
 	int calcData(int a, int b);
-	//int calcData2(int a, int b);
+	//int calcData2(int a, int b); 
 }
 
 public class MyLambda1 implements HelloInter{
