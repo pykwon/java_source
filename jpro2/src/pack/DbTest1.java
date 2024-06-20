@@ -11,7 +11,7 @@ public class DbTest1 {
 	private Statement stmt;
 	private ResultSet rs;
 	
-	public DbTest1() {
+	public DbTest1() { 
 		// 1. Driver file loading
 		try {
 			Class.forName("org.mariadb.jdbc.Driver");
