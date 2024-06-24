@@ -34,6 +34,9 @@
 		  OrderBean order = (OrderBean)list.get(i);
 		  ProductDto product = productMgr.getProduct(order.getProduct_no());
   %>
+  		<script>
+  		console.log("aa");
+  		</script>
   <tr>
   	<td><%=order.getNo() %></td>
   	<td><%=order.getId() %></td>
