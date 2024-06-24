@@ -27,7 +27,7 @@ public class ProductMgr {
 	private Connection conn;
 	private PreparedStatement pstmt;
 	private ResultSet rs;
-	private DataSource ds;
+	private DataSource ds; 
 	
 	public ProductMgr() {
 		try {
